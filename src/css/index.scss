@@ -4,9 +4,12 @@ body {
   font-family: $main-font;
 }
 
-main {
-  background: url('../../dist/images/park.jpg') center/cover;
-  height: 100vh;
+header {
+  background-image: url('../../dist/images/park.jpg');
+  background-size: 100% 155%;
+  background-repeat: no-repeat;
+
+  height: 90vh;
   width: 100vw;
   margin-left: -8px;
 }
@@ -38,22 +41,22 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
-.title {
+.title, .summary-title {
   font-weight: 400;
   font-size: 2.3rem;
   color: #000;
+  margin-top: 50px;
 }
 
-.main-dog {
-  width: 350px;
+.main-dog, .secondary-dogs {
+  width: 25%;
   border-radius: 50%;
   border: 5px solid $main-accent-color
 }
 
-.dog-button {
+.main-dog-button, .secondary-dog-buttons {
   width: 12rem;
   background-color: #fff;
   border: 5px solid $main-accent-color;
@@ -61,4 +64,31 @@ nav {
   font-size: 1.5rem;
   padding-top: 5px;
   padding-bottom: 5px;
+  margin-top: 30px;
+}
+
+main {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.summary-title {
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+.dog-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.secondary-dogs {
+  width: 55%;
+  border: 2.5px solid $main-accent-color
+}
+
+#third-dog {
+  width: 46.5%;
 }
