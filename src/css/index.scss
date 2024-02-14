@@ -17,8 +17,7 @@ header {
 nav {
   background-color: $secondary-accent-color;
   margin-top: -8px;
-  display: flex;
-  justify-content: space-between;
+  @include flexin-nav-socials();
 }
 
 .dog-icon {
@@ -27,20 +26,18 @@ nav {
 }
 
 .navigation {
-  display: flex;
-  justify-content: space-evenly;
   color: #fff;
+  @include flexin-info();
 }
 
 .nav-options {
   margin-right: 25px;
   font-size: 20px;
+  cursor: pointer;
 }
 
 .header-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flexin-sections();
 }
 
 .title, .summary-title {
@@ -65,12 +62,12 @@ nav {
   padding-top: 5px;
   padding-bottom: 5px;
   margin-top: 30px;
+  cursor: pointer;
 }
 
 main {
-  display: flex;
-  justify-content: space-evenly;
   margin-left: 30px;
+  @include flexin-info();
 }
 
 .summary-title {
@@ -79,10 +76,8 @@ main {
 }
 
 .dog-info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin-left: 10px;
+  @include flexin-sections();
 }
 
 .secondary-dogs {
@@ -116,9 +111,7 @@ footer {
 }
 
 .footer-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flexin-sections();
 }
 
 .learn-dogs, .github-link {
@@ -129,10 +122,9 @@ footer {
 }
 
 .social-section {
-  display: flex;
-  justify-content: space-between;
   width: 30%;
   margin-top: 20px;
+  @include flexin-nav-socials();
 }
 
 .socials {
@@ -142,4 +134,5 @@ footer {
 .github-link {
   margin-top: 40px;
   margin-bottom: 20px;
+  cursor: pointer;
 }
