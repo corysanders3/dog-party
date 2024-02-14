@@ -1,16 +1,138 @@
 @import 'variables';
+@import 'mixins';
 
 body {
-  background: url('../../dist/images/park.jpg') center/cover;
-  height: 100vh;
-  width: 100%;
+  font-family: $main-font;
+}
+
+header {
+  background-image: url('../../dist/images/park.jpg');
+  background-size: 100% 155%;
+  background-repeat: no-repeat;
+  height: 90vh;
+  width: 100vw;
+  margin-left: -8px;
 }
 
 nav {
-  // Example of using a variable:
   background-color: $secondary-accent-color;
+  margin-top: -8px;
+  @include flexin-nav-socials();
 }
 
 .dog-icon {
-  width: 50px;
+  width: 40px;
+  margin-left: 25px;
+}
+
+.navigation {
+  color: #fff;
+  @include flexin-info();
+}
+
+.nav-options {
+  margin-right: 25px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.header-section {
+  @include flexin-sections();
+}
+
+.title, .summary-title {
+  font-weight: 400;
+  font-size: 2.3rem;
+  color: #000;
+  margin-top: 50px;
+}
+
+.main-dog, .secondary-dogs {
+  width: 25%;
+  border-radius: 50%;
+  border: 5px solid $main-accent-color
+}
+
+.main-dog-button, .secondary-dog-buttons {
+  width: 12rem;
+  background-color: #fff;
+  border: 5px solid $main-accent-color;
+  color: $main-accent-color;
+  font-size: 1.5rem;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+main {
+  margin-left: 30px;
+  @include flexin-info();
+}
+
+.summary-title {
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+.dog-info {
+  margin-left: 10px;
+  @include flexin-sections();
+}
+
+.secondary-dogs {
+  width: 55%;
+  border: 2.5px solid $main-accent-color
+}
+
+#third-dog {
+  width: 46.5%;
+}
+
+p {
+  margin-top: 30px;
+  font-weight: 450;
+  font-size: 1.4rem;
+  padding-left: 4%;
+  padding-right: 4%;
+  text-align: center;
+}
+
+.secondary-dog-buttons {
+  width: 10rem;
+  margin-top: 15px;
+}
+
+footer {
+  margin-top: 40px;
+  background-color: $main-accent-color;
+  width: 100vw;
+  margin-left: -8px;
+}
+
+.footer-section {
+  @include flexin-sections();
+}
+
+.learn-dogs, .github-link {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 580;
+  margin-top: 20px;
+}
+
+.social-section {
+  width: 30%;
+  margin-top: 20px;
+  @include flexin-nav-socials();
+}
+
+.socials {
+  width: 13%
+}
+
+.github-link {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  cursor: pointer;
 }
