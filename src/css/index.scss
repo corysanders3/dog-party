@@ -33,3 +33,32 @@ nav {
   margin-right: 25px;
   font-size: 20px;
 }
+
+.main-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.title {
+  font-weight: 400;
+  font-size: 2.3rem;
+  color: #000;
+}
+
+.main-dog {
+  width: 350px;
+  border-radius: 50%;
+  border: 5px solid $main-accent-color
+}
+
+.dog-button {
+  width: 12rem;
+  background-color: #fff;
+  border: 5px solid $main-accent-color;
+  color: $main-accent-color;
+  font-size: 1.5rem;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
