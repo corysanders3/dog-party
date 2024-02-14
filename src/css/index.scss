@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'mixins';
 
 body {
   font-family: $main-font;
@@ -8,7 +9,6 @@ header {
   background-image: url('../../dist/images/park.jpg');
   background-size: 100% 155%;
   background-repeat: no-repeat;
-
   height: 90vh;
   width: 100vw;
   margin-left: -8px;
@@ -37,7 +37,7 @@ nav {
   font-size: 20px;
 }
 
-.main-section {
+.header-section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -70,6 +70,7 @@ nav {
 main {
   display: flex;
   justify-content: space-evenly;
+  margin-left: 30px;
 }
 
 .summary-title {
@@ -91,4 +92,54 @@ main {
 
 #third-dog {
   width: 46.5%;
+}
+
+p {
+  margin-top: 30px;
+  font-weight: 450;
+  font-size: 1.4rem;
+  padding-left: 4%;
+  padding-right: 4%;
+  text-align: center;
+}
+
+.secondary-dog-buttons {
+  width: 10rem;
+  margin-top: 15px;
+}
+
+footer {
+  margin-top: 40px;
+  background-color: $main-accent-color;
+  width: 100vw;
+  margin-left: -8px;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.learn-dogs, .github-link {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 580;
+  margin-top: 20px;
+}
+
+.social-section {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  margin-top: 20px;
+}
+
+.socials {
+  width: 13%
+}
+
+.github-link {
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
