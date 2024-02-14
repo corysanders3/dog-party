@@ -1,16 +1,35 @@
 @import 'variables';
 
 body {
+  font-family: $main-font;
+}
+
+main {
   background: url('../../dist/images/park.jpg') center/cover;
   height: 100vh;
-  width: 100%;
+  width: 100vw;
+  margin-left: -8px;
 }
 
 nav {
-  // Example of using a variable:
   background-color: $secondary-accent-color;
+  margin-top: -8px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .dog-icon {
-  width: 50px;
+  width: 40px;
+  margin-left: 25px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-evenly;
+  color: #fff;
+}
+
+.nav-options {
+  margin-right: 25px;
+  font-size: 20px;
 }
