@@ -5,8 +5,15 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack server",
-    "build": "webpack"
+    "build": "webpack",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/corysanders3/dog-party.git"
+  },
+  "homepage": "http://corysanders3.github.io/dog-party",
   "author": "Turing School of Software and Design",
   "license": "MIT",
   "dependencies": {
