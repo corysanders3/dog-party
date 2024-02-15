@@ -4,7 +4,7 @@
 This was a chance to practice some CSS and HTML, by matching a comp provided to me by the client (instructors).
 
 ### Context
-- The was worked on for 4 hours
+- This was worked on for 4 hours
 - I was 9 weeks into the Turing School program
 
 ### Tech Used
